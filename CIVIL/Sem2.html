@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="..\favicon.png">
+    <style>
+        body{
+            background-color: #00bfff;
+        }
+       
+        footer {
+  background-color: rgb(51, 45, 45);
+    color: white;
+  text-align: center;
+  padding: 20px 0;   
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    padding: 20px;
+  }
+  
+  footer {
+    text-align: center;
+  }
+}
+.btn{
+  float:right;
+  margin-right: 30px;
+}
+.center{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media only screen and (max-width: 720px) {
+                   footer p{
+                font-size:8px;
+            }
+        }
+      
+    </style>
+</head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Anna University </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Civilindex.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gpacalc.html">GPA calculator</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../cgpa.html">CGPA calculator</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../about.html">About GPA & CGPA</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <br>
+        <h1 class="text-center">SEMESTER 2</h1>
+        <br>
+       <form id="gpacalc">
+       
+          <div class="input-group mb-3 mx-auto w-50">
+            <span class="input-group-text" id="inputGroup-sizing-default">HS3252</span>
+            <select type="text" class="form-control" name="BEEE" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <option>O</option>
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C</option>
+              <option>RA</option>
+              </select>
+            </div>
+          <br>
+          <div class="input-group mb-3 mx-auto w-50">
+            <span class="input-group-text" id="inputGroup-sizing-default">MA3251</span>
+            <select type="text" class="form-control" name="PCL" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <option>O</option>
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C</option>
+              <option>RA</option>
+              </select>
+            </div>
+          <br>
+          <div class="input-group mb-3 mx-auto w-50">
+            <span class="input-group-text" id="inputGroup-sizing-default">PH3201</span>
+            <select type="text" class="form-control"   name="EG" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <option>O</option>
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C</option>
+              <option>RA</option>
+              </select>
+            </div>
+          <br>
+          <div class="input-group mb-3 mx-auto w-50">
+            <span class="input-group-text" id="inputGroup-sizing-default">BE3252</span>
+            <select type="text" class="form-control"   name="EPL" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <option>O</option>
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C</option>
+              <option>RA</option>
+              </select>
+            </div>
+          <br>
+          <div class="input-group mb-3  mx-auto w-50">
+            <span class="input-group-text" id="inputGroup-sizing-default">GE3251</span>
+            <select type="text" class="form-control"  name="PE" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <option>O</option>
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C</option>
+              <option>RA</option>
+              </select>
+            </div>
+          <br>
+          <div class="input-group mb-3  mx-auto w-50">
+            <span class="input-group-text" id="inputGroup-sizing-default">GE3271</span>
+            <select type="text" class="form-control"  name="SNM" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <option>O</option>
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C</option>
+              <option>RA</option>
+              </select>
+            </div>
+          <br>
+          <div class="input-group mb-3  mx-auto w-50">
+            <span class="input-group-text" id="inputGroup-sizing-default">BE3272</span>
+            <select type="text" class="form-control"   name="PY" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <option>O</option>
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C</option>
+
+              <option>RA</option>
+              </select>
+            </div>
+          <br>
+          <div class="center">
+            <label class="mx-4"><b>DO YOU HAVE THE BELOW SUBJECTS?</b></label>
+            <br><br>
+      <div class="form-check  form-check-inline">
+        <input class="form-check-input" type="radio" value="yes" id="y" name="flexRadioDefault" >
+        <label class="form-check-label" for="flexRadioDefault1">
+          YES
+        </label>
+      </div>
+           
+      <div class="form-check  form-check-inline">
+        <input class="form-check-input " type="radio" valu="no" id="n" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-labe text-center" for="flexRadioDefault1">
+          NO
+        </label>
+      </div>
+   
+  </div>
+  <br>
+      <div class="input-group mb-3  mx-auto w-50" id="new1">
+        <span class="input-group-text" id="inputGroup-sizing-default">GE3252</span>
+        <select type="text" class="form-control"  id="tm" class="remember"  name="TM" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          <option>O</option>
+          <option>A+</option>
+          <option>A</option>
+          <option>B+</option>
+          <option>B</option>
+          <option>C</option>
+
+          <option>RA</option>
+          </select>
+        </div>
+      <br>
+      <div class="input-group mb-3  mx-auto w-50" id="new2">
+        <span class="input-group-text" id="inputGroup-sizing-default">GE3272</span>
+        <select type="text" class="form-control"  id="cl" class="remember"  name="CL" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          <option>O</option>
+          <option>A+</option>
+          <option>A</option>
+          <option>B+</option>
+          <option>B</option>
+          <option>C</option>
+          <option>RA</option>
+          </select>
+        </div>
+      <br>
+        </form><br>
+         <div class=" d-grid gap-1 col-4 mx-auto">
+          <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="gpa">Get GPA</button>
+         </div>
+          <br>
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+           <div class="modal-dialog modal-dialog-centered">
+             <div class="modal-content ">
+               <div class="modal-header">
+                 <h1 class="modal-title fs-5 mx-auto" id="mod"id="staticBackdropLabel">Your GPA for 2 Sem is</h1>
+               </div>
+               <div class="modal-body mx-auto">
+                <h1 id="result"></h1>
+               </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-success mx-auto" data-bs-dismiss="modal">Ok</button>
+               </div>
+             </div>
+           </div>
+         </div><br>
+         <a href="#top"><button class="btn btn-warning">Top<i class="fa fa-arrow-up"></i></button></a>
+ 
+           <br><br>
+           <footer>
+            <p>Copyright &copy; 2023 Developed by <b>SRIMANJUNATH R & SRIRAGHAVAN K</b>. All rights reserved</p>
+         </footer>
+
+      
+          <script>
+            
+const cp = {
+    "beee": 2,
+    "pcl": 4,
+    "eg": 3,
+    "epl": 3,
+    "pe": 4,
+    "snm":2,
+    "ph": 2,
+    "tm":1,
+    "cl":2
+
+  };
+  
+  var  SUM_CP ;
+  const Gp = {
+    "O": 10,
+    "A+": 9,
+    "A": 8,
+    "B+": 7,
+    "B": 6,
+  };
+
+  
+  function convertToPoints(grade) {
+    return Gp[grade] ;
+  }
+  function convertToPoints(grade) {
+    return Gp[grade] || 0;
+  }
+  var yes=document.getElementById("y");
+  var no=document.getElementById("n");
+  document.getElementById("n").addEventListener("change" ,function(){
+    document.getElementById("new1").style.visibility="hidden";
+    document.getElementById("new2").style.visibility="hidden";
+
+  })
+  document.getElementById("y").addEventListener("change", function(){
+    document.getElementById("new1").style.visibility="visible";
+    document.getElementById("new2").style.visibility="visible";
+  })
+  
+  document.getElementById("gpa").addEventListener("click", function() {
+    const form = document.getElementById("gpacalc");
+    const resultDiv = document.getElementById("result");
+    const result=document.getElementById("mod");
+    var cgp;
+
+    
+    SUM_CP = Object.values(cp).reduce((sum, value) => sum + value, 0);
+    
+     const beee = form.BEEE.value === "RA" ? 0 : convertToPoints(form.BEEE.value);
+    
+     const pcl = form.PCL.value === "RA" ? 0 : convertToPoints(form.PCL.value);
+     const eg = form.EG.value === "RA" ? 0 : convertToPoints(form.EG.value);
+     const epl = form.EPL.value === "RA" ? 0 : convertToPoints(form.EPL.value);
+     const pe = form.PE.value === "RA" ? 0 : convertToPoints(form.PE.value);
+     const snm = form.SNM.value === "RA" ? 0 : convertToPoints(form.SNM.value); 
+     const py = form.PY.value === "RA" ? 0 : convertToPoints(form.PY.value); 
+     const tm = form.TM.value === "RA" ? 0 : convertToPoints(form.TM.value);
+     const cl= form.CL.value === "RA" ? 0 : convertToPoints(form.CL.value);
+   if( form.BEEE.value==="RA"){
+     SUM_CP-=cp["beee"];
+     
+   }
+
+  if( form.PCL.value === "RA"){
+    SUM_CP-=cp["pcl"];
+
+  }
+  if( form.EG.value === "RA" ){
+    SUM_CP-=cp["eg"];
+   
+  }
+  if(form.EPL.value === "RA"){
+    SUM_CP-=cp["epl"];
+    
+
+  }
+  if( form.PE.value === "RA"){
+    SUM_CP-=cp["pe"];
+
+  }
+  if( form.SNM.value === "RA"){
+    SUM_CP-=cp["snm"];
+    
+
+  }
+  if( form.PY.value === "RA"){
+    SUM_CP-=cp["ph"];
+  }
+  if( form.TM.value === "RA"){
+    SUM_CP-=cp["tm"];
+  }
+  if( form.CL.value === "RA"){
+    SUM_CP-=cp["cl"];
+  }
+  
+
+  if( document.getElementById("new1").style.visibility==="visible"&& document.getElementById("new2").style.visibility==="visible")
+  {
+    cgp = beee* cp["beee"] + pcl*cp["pcl"] + eg* cp["eg"] + epl* cp["epl"] + pe* cp["pe"] + snm* cp["snm"]+py*cp["ph"]+tm*cp["tm"]+cl*cp["cl"];
+  }
+  else if(document.getElementById("new1").style.visibility==="hidden"&& document.getElementById("new2").style.visibility==="hidden")
+  {
+    SUM_CP=SUM_CP-3;
+    cgp = beee* cp["beee"] +pcl*cp["pcl"] + eg* cp["eg"] + epl* cp["epl"] + pe* cp["pe"] + snm* cp["snm"]+py*cp["ph"];
+    if(form.TM.value==="RA"&&form.TM.value==="RA")
+    {
+      SUM_CP+=3;
+    }
+  }
+  const gpa = cgp / SUM_CP;
+  if(!yes.checked && !no.checked)
+   {
+    result.innerHTML="ALERT!";
+    resultDiv.innerText ="Please choose any one of the above option!";
+    resultDiv.style.color="Red";
+    resultDiv.style.fontSize="20px";
+   }
+   else{
+    result.innerHTML="Your GPA For Sem 2:";
+    resultDiv.innerText = gpa;
+    resultDiv.style.color="black";
+    resultDiv.style.fontSize="40px";
+   
+   }
+  });
+  
+          </script>
+</body>
+</html>
